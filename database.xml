@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <user>
+        <login>kokocikys</login>
+        <password>f29b4a84804c3f0502ee62c78cb24365a133929d</password>
+        <email>admin@mail.com</email>
+        <name>Ilya</name>
+    </user>
+    <user>
+        <login>Customer1</login>
+        <password>5625b3e96a22676b66d5d2f3c502e182d5543824</password>
+        <email>girlscout@mail.com</email>
+        <name>Anna</name>
+    </user>
+    <user>
+        <login>Customer2</login>
+        <password>a63b72678e96490f56b07d208b769eb83406aa8b</password>
+        <email>cowboy@mail.com</email>
+        <name>Кирилл</name>
+    </user>
+</root>
