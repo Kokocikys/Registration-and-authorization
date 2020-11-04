@@ -1,3 +1,5 @@
+<?php session_start()?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,15 +14,15 @@
 
 <div class="container">
     <h1>Авторизация</h1>
-    <p>Не зарегистрированны? <a href="registration.html">Создайте аккаунт!</a></p>
+    <p>Не зарегистрированны? <a href="registrationPage.php">Создайте аккаунт!</a></p>
     <form action="authorization.php" method="post">
-        <span>Введите логин</span>
+        <label>Введите логин</label>
         <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required><br>
-        <span>Введите пароль</span>
+        <label>Введите пароль</label>
         <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required><br>
         <div class="interactiveBlock">
-            <span><input type="checkbox" onclick="showOrHide()">&nbspПоказывать пароль</span>
-            <input type="submit" value="Войти" id="authorization">
+            <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
+            <input type="submit" name="insert" value="Войти" id="authorization">
         </div>
     </form>
     <br><span id="backToMain"><a href="index.html">Вернуться на главную</a></span>

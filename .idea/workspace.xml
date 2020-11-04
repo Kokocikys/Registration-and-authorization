@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="" />
+    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.html" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,12 +45,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1jkNByhiMqmlS0WztqHkBaBhKa0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -28,7 +63,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../localhost" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -39,11 +74,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
+      <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
     </key>
   </component>
@@ -60,33 +95,57 @@
       <workItem from="1604349114596" duration="8026000" />
       <workItem from="1604359172943" duration="28000" />
       <workItem from="1604359472480" duration="38000" />
-      <workItem from="1604409821969" duration="18850000" />
+      <workItem from="1604409821969" duration="19314000" />
+      <workItem from="1604500953770" duration="27449000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604438643964">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604439382940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604438643964" />
-    <state x="838" y="418" key="Github.ShareDialog" timestamp="1604438628718">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604439382940" />
+    <state x="838" y="418" key="Github.ShareDialog" timestamp="1604439313030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604438628718" />
+    <state x="838" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604439313030" />
+    <state x="735" y="225" key="Github.UntrackedFilesDialog" timestamp="1604439332289">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="735" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604439332289" />
     <state x="685" y="243" key="NewPhpClassDialog" timestamp="1604356667927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604356667927" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604438279849">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604512760657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604438279849" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604427579597">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604512760657" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604526535119">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604427579597" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604526535119" />
+    <state x="0" y="0" width="1527" height="1027" key="dock-window-1" timestamp="1604527923014">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="0" width="1527" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604527923014" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604526160429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604526160429" />
   </component>
 </project>
