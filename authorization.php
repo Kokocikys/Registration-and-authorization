@@ -1,21 +1,32 @@
 <?php
+session_start();
 
-if (isset($_POST['insert'])) {
+if (isset($_POST['login'], $_POST['password'])) {
 
-    session_start();
+    $errors = array();
+    if (empty($_POST['login'])) {
+        $errors['login'] = 'Вы не ввели логин!';
+    }
+    if (empty($_POST['password'])) {
+        $errors['password'] = 'Вы не ввели пароль!';
+    }
 
-    $login = $_POST['login'];
-    $salt = 'ibverbich112';
-    $password = $_POST['password'] . $salt;
-    $password = sha1($password);
+    if (!count($errors)) {
 
-    $user = simplexml_load_file('database.xml')->xpath("//user[login ='$login' and password = '$password']");
+        $login = $_POST['login'];
 
-    if (count($user) > 0) {
-        $_SESSION['login'] = $login;
-        header('Location: userPage.php');
-    } else {
-        $_SESSION['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
-        header('Location: authorizationPage.php');
+        $salt = 'ibverbich112';
+        $password = $_POST['password'] . $salt;
+        $password = sha1($password);
+
+        $user = simplexml_load_file('database.xml')->xpath("//user[login ='$login' and password = '$password']");
+
+        if (!count($user)) {
+            $errors['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
+            header('Location: authorizationPage.php');
+        } else {
+            $_SESSION['login'] = $login;
+            header('Location: userPage.php');
+        }
     }
 }

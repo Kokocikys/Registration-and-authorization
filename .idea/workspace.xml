@@ -20,7 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="Rebuild">
+      <change afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +41,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -43,7 +50,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jkNByhiMqmlS0WztqHkBaBhKa0" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -63,11 +72,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\PHP" />
       <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
     </key>
   </component>
@@ -85,7 +95,9 @@
       <workItem from="1604359172943" duration="28000" />
       <workItem from="1604359472480" duration="38000" />
       <workItem from="1604409821969" duration="19314000" />
-      <workItem from="1604500953770" duration="27648000" />
+      <workItem from="1604500953770" duration="27777000" />
+      <workItem from="1604574386753" duration="831000" />
+      <workItem from="1604584898440" duration="23786000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -94,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604530444486</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Rebuild">
+      <created>1604530606231</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1604530606231</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,12 +129,21 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rebuild" />
     <option name="LAST_COMMIT_MESSAGE" value="Rebuild" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604598081582">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604598081582" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604591313470">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604591313470" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604439382940">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -128,29 +156,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604439332289" />
-    <state x="685" y="243" key="NewPhpClassDialog" timestamp="1604356667927">
+    <state x="685" y="243" key="NewPhpClassDialog" timestamp="1604588022382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="685" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604356667927" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604512760657">
+    <state x="685" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604588022382" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604598091165">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604512760657" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604526535119">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604598091165" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604575185578">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604526535119" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604530385362">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604575185578" />
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604530385362" />
+    <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604593594418" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604530551393">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604530551393" />
     <state x="0" y="0" width="1527" height="1027" key="dock-window-1" timestamp="1604527923014">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="0" y="0" width="1527" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604527923014" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604526160429">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604600471888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604526160429" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604600471888" />
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604595214196">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604595214196" />
   </component>
 </project>

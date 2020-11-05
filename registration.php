@@ -1,52 +1,53 @@
 <?php
+session_start();
+require_once 'CRUD.php';
+$CREATE = new CRUD();
 
-if (isset($_POST['insert'])) {
+if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST['email'], $_POST['name'])) {
+    $errors = array();
+    if (empty($_POST['login'])) {
+        $errors['login'] = 'Вы не ввели логин!';
+    }
+    if (empty($_POST['password'])) {
+        $errors['password'] = 'Вы не ввели пароль!';
+    }
+    if (empty($_POST['confirmPassword'])) {
+        $errors['confirmPassword'] = 'Вы не ввели пароль повторно!';
+    }
+    if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+        $errors['email'] = 'Вы не ввели email!';
+    }
+    if (empty($_POST['name'])) {
+        $errors['name'] = 'Вы не ввели имя!';
+    }
 
-    session_start();
+    if (!count($errors)) {
+        $login = $_POST['login'];
+        $password = $_POST['password'];
+        $confirmPassword = $_POST['confirmPassword'];
+        $email = $_POST['email'];
+        $name = $_POST['name'];
 
-    $login = $_POST['login'];
-    $password = $_POST['password'];
-    $confirmPassword = $_POST['confirmPassword'];
-    $email = $_POST['email'];
-    $name = $_POST['name'];
+        if ($password == $confirmPassword) {
+            $coincidence = simplexml_load_file('database.xml')->xpath("//user[login ='$login' or email = '$email']");
+            if (!count($coincidence)) {
+                $salt = 'ibverbich112';
+                $password = $_POST['password'] . $salt;
+                $password = sha1($password);
 
-    if ($password === $confirmPassword) {
+                $CREATE->createUser($login, $password, $email, $name);
 
-        $salt = 'ibverbich112';
-        $password = $_POST['password'] . $salt;
-        $password = sha1($password);
+                $CREATE->read();
 
-        $xml = new DOMDocument("1.0", "UTF-8");
-        $xml->load('database.xml');
-
-        $coincidence = simplexml_load_file('database.xml')->xpath("//user[login ='$login' or email = '$email']");
-
-        if (count($coincidence) > 0) {
-            $_SESSION['unUnique'] = 'Пользователь с таким логином и/или почтой уже существует!';
-            header('Location: registrationPage.php');
+               // header('Location: authorizationPage.php');
+                exit();
+            } else {
+                $errors['uniqueness'] = 'Пользователь с таким логином и/или почтой уже существует!';
+                header('Location: registrationPage.php');
+            }
         } else {
-            $rootTag = $xml->getElementsByTagName("root")->item(0);
-
-            $userTag = $xml->createElement("user");
-
-            $loginTag = $xml->createElement("login", $login);
-            $passwordTag = $xml->createElement("password", $password);
-            $emailTag = $xml->createElement("email", $email);
-            $nameTag = $xml->createElement("name", $name);
-
-            $userTag->appendChild($loginTag);
-            $userTag->appendChild($passwordTag);
-            $userTag->appendChild($emailTag);
-            $userTag->appendChild($nameTag);
-
-            $rootTag->appendChild($userTag);
-
-            $xml->save('database.xml');
-
-            header('Location: authorizationPage.php');
+            $errors['confirmPassword'] = 'Пароли не совпадают!';
+            header('Location: registrationPage.php');
         }
-    } else {
-        $_SESSION['massage'] = 'Пароли не совпадают!';
-        header('Location: registrationPage.php');
     }
 }

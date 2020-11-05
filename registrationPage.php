@@ -1,5 +1,7 @@
-<?php session_start() ?>
-
+<? session_start();
+require_once 'CRUD.php';
+$CREATE = new CRUD();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -17,28 +19,26 @@
     <p>Уже есть аккаунт? <a href="authorizationPage.php">Войдите!</a></p>
     <form action="registration.php" method="post">
         <label>Введите логин</label>
-        <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required><br>
+        <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required
+               pattern="[A-Za-z]{6,}"><br>
         <label>Введите пароль</label>
-        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required><br>
+        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required
+               pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+        ><br>
         <label>Подтвердите пароль</label>
         <input class="form-control" type='password' name='confirmPassword' placeholder="Пароль" id='confirmPassword'
-               required><br>
-        <? if ($_SESSION['massage']) {
-            echo '<span class="msg">' . $_SESSION['massage'] . '</span><br>';
-        }
-        unset($_SESSION['massage']); ?>
+               required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
+        ><br>
         <label>Введите адрес электронной почты</label>
         <input class="form-control" type='email' name='email' placeholder="Email" id='email' required><br>
         <label>Введите ваше имя</label>
-        <input class="form-control" type='text' name='name' placeholder="Имя" id='name' required><br>
-        <? if ($_SESSION['unUnique']) {
-            echo '<span class="msg">' . $_SESSION['unUnique'] . '</span><br>';
-        }
-        unset($_SESSION['unUnique']); ?>
+        <input class="form-control" type='text' name='name' placeholder="Имя" id='name' required
+               pattern="[A-Za-zА-Яа-яЁё]{2,}"><br>
         <div class="interactiveBlock">
             <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
-            <input type="submit" value="Зарегистрироваться" name="insert" id="registration">
+            <input type="submit" value="Зарегистрироваться" id="registration">
         </div>
+        <? // вывод ошибок через json?>
     </form>
     <br><span id="backToMain"><a href="index.html">Вернуться на главную</a></span>
 </div>

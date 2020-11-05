@@ -24,6 +24,7 @@
             <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
             <input type="submit" name="insert" value="Войти" id="authorization">
         </div>
+        <? // вывод ошибок входа?>
     </form>
     <br><span id="backToMain"><a href="index.html">Вернуться на главную</a></span>
 </div>
