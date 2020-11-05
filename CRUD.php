@@ -53,4 +53,27 @@ class CRUD
             return $_SESSION;
         }
     }
+
+    public function delete()
+    {
+        $xml = new DOMDocument("1.0", "UTF-8");
+        $xml->load('database.xml');
+
+        $theDocument = $xml->documentElement;
+
+        $list = $theDocument->getElementsByTagName('user');
+
+        $nodeToRemove = null;
+        foreach ($list as $domElement){
+            $attrValue = $domElement->getAttribute('id');
+            if ($attrValue == '2') {
+                $nodeToRemove = $domElement;
+            }
+        }
+
+        if ($nodeToRemove != null)
+            $theDocument->removeChild($nodeToRemove);
+
+        $xml->save('database.xml');
+    }
 }

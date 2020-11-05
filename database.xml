@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
-    <user>
+    <user id="1">
         <login>Customer</login>
         <password>6609bc09f8982564f975306e5063aa564bd214e8</password>
         <email>test@exemple.com</email>
         <name>Илья</name>
     </user>
-    <user>
-        <login>kokocikys</login>
-        <password>c15b14703dc4a243c288a7cdaa0aeb4b752fa34a</password>
-        <email>chernetckaya.larisa@gmail.com</email>
-        <name>Илья</name>
-    </user>
+    
 </users>

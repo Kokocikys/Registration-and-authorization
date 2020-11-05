@@ -25,10 +25,11 @@ if (isset($_POST['login'], $_POST['password'])) {
 
         if (!count($user)) {
             $errors['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
-//            header('Location: authorizationPage.php');
+            header('Location: authorizationPage.php');
         } else {
-            $CREATE->update($login);
-            header('Location: userPage.php');
+//            $CREATE->update($login);
+//            header('Location: userPage.php');
+            $CREATE->delete();
         }
     }
 }
