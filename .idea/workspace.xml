@@ -21,6 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="Rebuild">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +94,7 @@
       <workItem from="1604409821969" duration="19314000" />
       <workItem from="1604500953770" duration="27777000" />
       <workItem from="1604574386753" duration="831000" />
-      <workItem from="1604584898440" duration="24162000" />
+      <workItem from="1604584898440" duration="27418000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -113,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604609807297</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Rebuild">
+      <created>1604610247484</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604610247484</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,10 +175,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604598091165" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604575185578">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604610279108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604575185578" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604610279108" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

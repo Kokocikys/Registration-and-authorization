@@ -1,4 +1,4 @@
-<?php session_start()?>
+<?php session_start() ?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,8 +12,8 @@
 </head>
 <body>
 
-<h1>Добро пожаловать, <? echo $_SESSION['login']?>!</h1>
-<a href="logout.php" style=""><h1> Выход<h1></a>
+<h1>Добро пожаловать, <? echo $_SESSION['userData'][3] ?>!</h1>
+<a href="logout.php" style=""><h1>&nbspВыход!<h1></a>
 
 </body>
 </html>

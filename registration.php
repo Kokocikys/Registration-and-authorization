@@ -36,10 +36,7 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
                 $password = sha1($password);
 
                 $CREATE->createUser($login, $password, $email, $name);
-
-                $CREATE->read();
-
-               // header('Location: authorizationPage.php');
+                header('Location: authorizationPage.php');
                 exit();
             } else {
                 $errors['uniqueness'] = 'Пользователь с таким логином и/или почтой уже существует!';

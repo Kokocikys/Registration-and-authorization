@@ -1,5 +1,7 @@
 <?php
 session_start();
+require_once 'CRUD.php';
+$CREATE = new CRUD();
 
 if (isset($_POST['login'], $_POST['password'])) {
 
@@ -23,9 +25,9 @@ if (isset($_POST['login'], $_POST['password'])) {
 
         if (!count($user)) {
             $errors['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
-            header('Location: authorizationPage.php');
+//            header('Location: authorizationPage.php');
         } else {
-            $_SESSION['login'] = $login;
+            $CREATE->update($login);
             header('Location: userPage.php');
         }
     }
