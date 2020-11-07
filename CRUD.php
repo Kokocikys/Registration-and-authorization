@@ -11,6 +11,7 @@ class CRUD
         $usersTag = $xml->getElementsByTagName("users")->item(0);
 
         $userTag = $xml->createElement("user");
+        $userTag->setAttribute('id', $xml->getElementsByTagName('user')->length);
 
         $loginTag = $xml->createElement("login", $login);
         $passwordTag = $xml->createElement("password", $password);
@@ -27,53 +28,45 @@ class CRUD
         $xml->save('database.xml');
     }
 
-    public function read()
+    public function read($login)
     {
-        $users = simplexml_load_file('database.xml');
-        $users->asXML();
-        foreach ($users->user as $item) {
-            $login = $item->login;
-            $password = $item->password;
-            $email = $item->email;
-            $name = $item->name;
-            echo $login . ', ' . $password . ', ' . $email . ', ' . $name . '<br>';
-        }
-    }
-
-    public function update($login)
-    {
-        $coincidence = simplexml_load_file('database.xml')->xpath("//user[login ='$login']");
-        foreach ($coincidence as $item) {
+        $read = simplexml_load_file('database.xml')->xpath("//user[login ='$login']");
+        foreach ($read as $item) {
             $userDataArray = [
-                $login = $item->login->asXML(),
-                $password = $item->password->asXML(),
-                $email = $item->email->asXML(),
-                $name = $item->name->asXML()];
-            $_SESSION['userData'] = $userDataArray;
-            return $_SESSION;
+                $item->login->__toString(),
+                $item->password->__toString(),
+                $item->email->__toString(),
+                $item->name->__toString()];
+            return $_SESSION['userData'] = $userDataArray;
         }
     }
 
-    public function delete()
+    public function update($oldLogin, $newLogin, $newPassword, $newEmail, $newName) //должна быть еще одна форма в кабинете юзера, которая будет отправлять измененные данные
+    {
+        $update = simplexml_load_file('database.xml')->xpath("//user[login ='$oldLogin']");
+        foreach ($update as $item) {
+            $item->login = $newLogin;
+            $item->password = $newPassword;
+            $item->email = $newEmail;
+            $item->name = $newName;
+            $update->asXML('database.xml');
+        }
+    }
+
+    public function delete($login)
     {
         $xml = new DOMDocument("1.0", "UTF-8");
         $xml->load('database.xml');
 
-        $theDocument = $xml->documentElement;
+        $xpath = new DOMXpath($xml);
 
-        $list = $theDocument->getElementsByTagName('user');
-
-        $nodeToRemove = null;
-        foreach ($list as $domElement){
-            $attrValue = $domElement->getAttribute('id');
-            if ($attrValue == '2') {
-                $nodeToRemove = $domElement;
+        $nodeList = $xpath->query("//user[login ='$login']", $xml->documentElement);
+        foreach ($nodeList as $dataNode) {
+            if ($dataNode->parentNode === null) {
+                continue;
             }
+            $dataNode->parentNode->removeChild($dataNode);
+            $xml->save('database.xml');
         }
-
-        if ($nodeToRemove != null)
-            $theDocument->removeChild($nodeToRemove);
-
-        $xml->save('database.xml');
     }
 }

@@ -4,7 +4,9 @@ require_once 'CRUD.php';
 $CREATE = new CRUD();
 
 if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST['email'], $_POST['name'])) {
+
     $errors = array();
+
     if (empty($_POST['login'])) {
         $errors['login'] = 'Вы не ввели логин!';
     }
@@ -22,6 +24,7 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
     }
 
     if (!count($errors)) {
+
         $login = $_POST['login'];
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirmPassword'];

@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start();
+require_once 'CRUD.php';
+$CREATE = new CRUD();?>
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,8 +14,11 @@
 </head>
 <body>
 
-<h1>Добро пожаловать, <? echo $_SESSION['userData'][3] ?>!</h1>
-<a href="logout.php" style=""><h1>&nbspВыход!<h1></a>
+<div>
+    <h1>Добро пожаловать, <? echo $_SESSION['userData'][3]; ?>!</h1>
+    <a href="delete.php"><h3>Нажмите здесь, чтобы удалить аккаунт!</h3></a>
+    <a href="logout.php"><h3>&nbspВыход!<h1></a>
+</div>
 
 </body>
 </html>

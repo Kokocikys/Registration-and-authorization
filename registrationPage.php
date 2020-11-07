@@ -20,7 +20,7 @@ $CREATE = new CRUD();
     <form action="registration.php" method="post">
         <label>Введите логин</label>
         <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required
-               pattern="[A-Za-z]{6,}"><br>
+               pattern="[A-Za-z0-9]{6,}"><br>
         <label>Введите пароль</label>
         <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required
                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"

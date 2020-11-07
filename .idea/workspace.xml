@@ -19,11 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="CR">
+    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="CRUD">
+      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +64,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../localhost" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,7 +101,11 @@
       <workItem from="1604500953770" duration="27777000" />
       <workItem from="1604574386753" duration="831000" />
       <workItem from="1604584898440" duration="27549000" />
-      <workItem from="1604613586927" duration="3751000" />
+      <workItem from="1604613586927" duration="3786000" />
+      <workItem from="1604745026608" duration="8451000" />
+      <workItem from="1604758545438" duration="914000" />
+      <workItem from="1604759487665" duration="12140000" />
+      <workItem from="1604781047895" duration="1632000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -131,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604613533351</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="CRUD">
+      <created>1604617381894</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1604617381894</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +170,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rebuild" />
     <MESSAGE value="CR" />
-    <option name="LAST_COMMIT_MESSAGE" value="CR" />
+    <MESSAGE value="CRUD" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604598081582">
@@ -163,10 +182,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604591313470" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604439382940">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604745035243">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604439382940" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604745035243" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1604439313030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -179,30 +198,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="685" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604588022382" />
-    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604598091165">
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1604759554645">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604598091165" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604613540966">
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604617385783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604613540966" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604617385783" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604593594418" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604613460694">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604781584162">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604613460694" />
-    <state x="0" y="0" width="1527" height="1027" key="dock-window-1" timestamp="1604527923014">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604781584162" />
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1604761799066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="0" width="1527" height="1027" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604527923014" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604616075223">
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604761799066" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604761663188">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604616075223" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604761663188" />
     <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604595214196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
