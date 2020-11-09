@@ -16,6 +16,11 @@ body {
     margin: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,0.3)
 }
+
+.errorAlert{
+    color: red;
+}
+
 #mainMenuButtonAuth:hover, #mainMenuButtonReg:hover {
     font-size: 40px;
     color: midnightblue;

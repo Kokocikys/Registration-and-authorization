@@ -4,30 +4,27 @@ require_once 'CRUD.php';
 $CREATE = new CRUD();
 
 if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST['email'], $_POST['name'])) {
-
     $errors = array();
-
     if (empty($_POST['login'])) {
-        $errors['login'] = 'Вы не ввели логин!';
+        $errors['loginError'] = 'Вы не ввели логин!';
     }
     if (empty($_POST['password'])) {
-        $errors['password'] = 'Вы не ввели пароль!';
+        $errors['passwordError'] = 'Вы не ввели пароль!';
     }
     if (empty($_POST['confirmPassword'])) {
-        $errors['confirmPassword'] = 'Вы не ввели пароль повторно!';
+        $errors['confirmPasswordError'] = 'Вы не ввели пароль повторно!';
     }
     if (empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Вы не ввели email!';
+        $errors['emailError'] = 'Вы не ввели email!';
     }
     if (empty($_POST['name'])) {
-        $errors['name'] = 'Вы не ввели имя!';
+        $errors['nameError'] = 'Вы не ввели имя!';
     }
-
     if (!count($errors)) {
 
-        $login = $_POST['login'];
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirmPassword'];
+        $login = $_POST['login'];
         $email = $_POST['email'];
         $name = $_POST['name'];
 
@@ -39,15 +36,13 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
                 $password = sha1($password);
 
                 $CREATE->createUser($login, $password, $email, $name);
-                header('Location: authorizationPage.php');
-                exit();
             } else {
-                $errors['uniqueness'] = 'Пользователь с таким логином и/или почтой уже существует!';
-                header('Location: registrationPage.php');
+                $errors['uniquenessError'] = 'Пользователь с таким логином и/или почтой уже существует!';
+                echo json_encode($errors);
             }
         } else {
-            $errors['confirmPassword'] = 'Пароли не совпадают!';
-            header('Location: registrationPage.php');
+            $errors['samePasswordError'] = 'Пароли не совпадают!';
+            echo json_encode($errors);
         }
-    }
+    } else echo json_encode($errors);
 }

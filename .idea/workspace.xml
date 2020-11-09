@@ -19,18 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="CRUD">
-      <change afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
+    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="CRUD-final">
+      <change afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaScript/registrationScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,12 +72,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\PHP" />
+      <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
     </key>
   </component>
@@ -105,7 +102,12 @@
       <workItem from="1604745026608" duration="8451000" />
       <workItem from="1604758545438" duration="914000" />
       <workItem from="1604759487665" duration="12140000" />
-      <workItem from="1604781047895" duration="1632000" />
+      <workItem from="1604781047895" duration="1669000" />
+      <workItem from="1604841469595" duration="22574000" />
+      <workItem from="1604871201695" duration="936000" />
+      <workItem from="1604958611850" duration="884000" />
+      <workItem from="1604959716114" duration="576000" />
+      <workItem from="1604960321020" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -149,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604617381894</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="CRUD-final">
+      <created>1604782701545</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1604782701545</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +180,8 @@
     <MESSAGE value="Rebuild" />
     <MESSAGE value="CR" />
     <MESSAGE value="CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD" />
+    <MESSAGE value="CRUD-final" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRUD-final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604598081582">
@@ -182,10 +192,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604591313470" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604745035243">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604846283043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604745035243" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604846283043" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1604439313030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,10 +212,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604617385783">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604782708670">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604617385783" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604782708670" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -218,10 +228,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604761799066" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604761663188">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1604845333085">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604761663188" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604845333085" />
     <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604595214196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

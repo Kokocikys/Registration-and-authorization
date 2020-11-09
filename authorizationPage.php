@@ -1,5 +1,4 @@
-<?php session_start()?>
-
+<? session_start()?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -15,11 +14,12 @@
 <div class="container">
     <h1>Авторизация</h1>
     <p>Не зарегистрированны? <a href="registrationPage.php">Создайте аккаунт!</a></p>
-    <form action="authorization.php" method="post">
-        <label>Введите логин</label>
+    <form>
+        <label>Введите логин</label><span class="errorAlert" id="loginError"></span>
         <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required><br>
-        <label>Введите пароль</label>
+        <label>Введите пароль</label><span class="errorAlert" id="passwordError"></span>
         <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required><br>
+        <span class="errorAlert" id="signInError"></span>
         <div class="interactiveBlock">
             <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
             <input type="submit" name="insert" value="Войти" id="authorization">
@@ -30,6 +30,7 @@
 
 <script src="JavaScript/jquery-3.5.1.js"></script>
 <script src="JavaScript/passwordVisibility.js"></script>
+<script src="JavaScript/authorizationScript.js"></script>
 
 </body>
 </html>
