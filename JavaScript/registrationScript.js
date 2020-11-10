@@ -18,18 +18,16 @@ $(document).ready(function () {
             },
             dataType: 'JSON',
             success: function (data) {
-                if (data != 'success') {
-                    if (data === undefined) {
-                        window.location.href = 'authorizationPage.php';
-                    } else {
-                        data.loginError ? $('#loginError').text(data.loginError) : $('#loginError').text('');
-                        data.passwordError ? $('#passwordError').text(data.passwordError) : $('#passwordError').text('');
-                        data.confirmPasswordError ? $('#confirmPasswordError').text(data.confirmPasswordError) : $('#confirmPasswordError').text('');
-                        data.emailError ? $('#emailError').text(data.emailError) : $('#emailError').text('');
-                        data.nameError ? $('#nameError').text(data.nameError) : $('#nameError').text('');
-                        data.uniquenessError ? $('#uniquenessError').text(data.uniquenessError) : $('#uniquenessError').text('');
-                        data.samePasswordError ? $('#samePasswordError').text(data.samePasswordError) : $('#samePasswordError').text('');
-                    }
+                if (data.length != 0) {
+                    data.loginError ? $('#loginError').text(data.loginError) : $('#loginError').text('');
+                    data.passwordError ? $('#passwordError').text(data.passwordError) : $('#passwordError').text('');
+                    data.confirmPasswordError ? $('#confirmPasswordError').text(data.confirmPasswordError) : $('#confirmPasswordError').text('');
+                    data.emailError ? $('#emailError').text(data.emailError) : $('#emailError').text('');
+                    data.nameError ? $('#nameError').text(data.nameError) : $('#nameError').text('');
+                    data.uniquenessError ? $('#uniquenessError').text(data.uniquenessError) : $('#uniquenessError').text('');
+                    data.samePasswordError ? $('#samePasswordError').text(data.samePasswordError) : $('#samePasswordError').text('');
+                } else {
+                    window.location.href = 'authorizationPage.php';
                 }
             }
         })

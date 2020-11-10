@@ -11,19 +11,20 @@ if (isset($_POST['login'], $_POST['password'])) {
     if (empty($_POST['password'])) {
         $errors['passwordError'] = 'Вы не ввели пароль!';
     }
-    if (!count($errors)) {
+    if (empty($errors)) {
 
-        $login = $_POST['loginError'];
+        $login = $_POST['login'];
         $salt = 'ibverbich112';
-        $password = $_POST['passwordError'] . $salt;
+        $password = $_POST['password'] . $salt;
         $password = sha1($password);
 
         $user = simplexml_load_file('database.xml')->xpath("//user[login ='$login' and password = '$password']");
-        if (!count($user)) {
+        if (empty($user)) {
             $errors['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
             echo json_encode($errors);
         } else {
             $CREATE->read($login);
+            echo json_encode($errors);
         }
     } else echo json_encode($errors);
 }

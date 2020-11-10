@@ -20,7 +20,7 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
     if (empty($_POST['name'])) {
         $errors['nameError'] = 'Вы не ввели имя!';
     }
-    if (!count($errors)) {
+    if (empty($errors)) {
 
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirmPassword'];
@@ -30,12 +30,13 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
 
         if ($password == $confirmPassword) {
             $coincidence = simplexml_load_file('database.xml')->xpath("//user[login ='$login' or email = '$email']");
-            if (!count($coincidence)) {
+            if (empty($coincidence)) {
                 $salt = 'ibverbich112';
                 $password = $_POST['password'] . $salt;
                 $password = sha1($password);
 
                 $CREATE->createUser($login, $password, $email, $name);
+                echo json_encode($errors);
             } else {
                 $errors['uniquenessError'] = 'Пользователь с таким логином и/или почтой уже существует!';
                 echo json_encode($errors);

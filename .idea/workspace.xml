@@ -19,15 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="CRUD-final">
-      <change afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JavaScript/registrationScript.js" afterDir="false" />
+    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="ajax/json + error alert work right">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/authorizationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/registrationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/registrationScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +107,11 @@
       <workItem from="1604871201695" duration="936000" />
       <workItem from="1604958611850" duration="884000" />
       <workItem from="1604959716114" duration="576000" />
-      <workItem from="1604960321020" duration="2454000" />
+      <workItem from="1604960321020" duration="2532000" />
+      <workItem from="1604963362854" duration="3080000" />
+      <workItem from="1605002245975" duration="404000" />
+      <workItem from="1605038054049" duration="1039000" />
+      <workItem from="1605039116270" duration="3986000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -158,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604782701545</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ajax/json + error alert">
+      <created>1604962833912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1604962833912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +192,9 @@
     <MESSAGE value="CR" />
     <MESSAGE value="CRUD" />
     <MESSAGE value="CRUD-final" />
-    <option name="LAST_COMMIT_MESSAGE" value="CRUD-final" />
+    <MESSAGE value="ajax/json + error alert" />
+    <MESSAGE value="ajax/json + error alert work right" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax/json + error alert work right" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604598081582">
@@ -212,18 +225,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604782708670">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605043026682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604782708670" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605043026682" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604593594418" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1604781584162">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605042961425">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604781584162" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605042961425" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1604761799066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
