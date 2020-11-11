@@ -11,20 +11,28 @@
 </head>
 <body>
 
-<div class="containerAuth">
-    <h1>Авторизация</h1>
-    <p>Не зарегистрированны? <a href="registrationPage.php">Создайте аккаунт!</a></p>
-    <form>
-        <label id="loginLabel">Введите логин</label>
-        <input class="form-control" type='text' name='login' placeholder="Логин" id='login'><br>
-        <label id="passwordLabel">Введите пароль</label>
-        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password'><br>
-        <span class="errorAlert" id="signInError"></span>
-        <div class="interactiveBlock">
-            <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
-            <input type="submit" name="insert" value="Войти" id="authorization">
+<div class="col-4">
+    <div class="containerAuth">
+        <h1>Авторизация</h1>
+        <p>Не зарегистрированны? <a href="registrationPage.php">Создайте аккаунт!</a></p>
+        <form>
+            <label id="loginLabel">Введите логин</label>
+            <input class="form-control" type='text' name='login' placeholder="Логин" id='login'><br>
+            <label id="passwordLabel">Введите пароль</label>
+            <input class="form-control" type='password' name='password' placeholder="Пароль" id='password'><br>
+            <span class="errorAlert" id="signInError"></span>
+            <div class="interactiveBlock">
+                <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
+                <input type="submit" name="insert" value="Войти" id="authorization">
+            </div>
+        </form>
+    </div>
+    <div class="containerUser">
+        <h1>Вы вошли как <? echo $_SESSION['userData'][0]; ?>!</h1><br>
+        <div class="functionality">
+            <a href="userPage.php">Зайти в кабинет пользователя</a><br>
         </div>
-    </form>
+    </div>
     <br><span id="backToMain"><a href="index.html">Вернуться на главную</a></span>
 </div>
 
@@ -33,13 +41,18 @@
 <script src="JavaScript/authorizationScript.js"></script>
 
 <?
-if(isset($_COOKIE['login']) and isset($_COOKIE['password'])){
+if (isset($_COOKIE['login']) and isset($_COOKIE['password'])) {
     $cookieLogin = $_COOKIE['login'];
     $cookiePassword = $_COOKIE['password'];
     echo "<script>
 document.getElementById('login').value = '$cookieLogin';
-document.getElementById('password').value = '$cookiePassword';
-</script>";
+document.getElementById('password').value = '$cookiePassword';</script>";
+}
+
+if (empty($_SESSION)) {
+    echo "<script>$('.containerUser').addClass('hideContainer');</script>";
+} else {
+    echo "<script>$('.containerAuth').addClass('hideContainer');</script>";
 }
 ?>
 

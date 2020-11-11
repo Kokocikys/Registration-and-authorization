@@ -17,10 +17,6 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-.errorAlert {
-    color: red;
-}
-
 #mainMenuButtonAuth:hover, #mainMenuButtonReg:hover {
     font-size: 40px;
     color: midnightblue;
@@ -33,21 +29,17 @@ body {
     transition: box-shadow 200ms linear;
 }
 
-.container {
+.containerAuth, .containerReg {
     padding: 10px;
     font-size: 20px;
-    width: 35%;
 }
 
-.msg {
-    display: flex;
-    justify-content: center;
-    color: firebrick;
-    text-align: center;
+.hideContainer {
+    display: none;
 }
 
-h1, h3 {
-    text-align: center;
+.errorAlert {
+    color: red;
 }
 
 .interactiveBlock {
@@ -55,10 +47,16 @@ h1, h3 {
     justify-content: space-between;
 }
 
+.functionality{
+    font-size: 20px;
+    color: black;
+}
+
 #backToMain {
     display: flex;
     justify-content: center;
 }
 
-
-
+h1, h3 {
+    text-align: center;
+}
