@@ -3,7 +3,6 @@ $(document).ready(function () {
         let login = $('#login').val();
         let password = $('#password').val();
         event.preventDefault();
-        console.log('0');
         $.ajax({
             url: 'authorization.php',
             method: 'POST',
@@ -13,14 +12,11 @@ $(document).ready(function () {
             },
             dataType: 'JSON',
             success: function (data) {
-                console.log('1');
                 if (data.length != 0) {
-                    console.log('2');
-                    data.loginError ? $('#loginError').text(data.loginError) : $('#loginError').text('');
-                    data.passwordError ? $('#passwordError').text(data.passwordError) : $('#passwordError').text('');
+                    data.loginError ? ($('#loginLabel').text('').text(data.loginError).addClass('errorAlert')) : $('#loginLabel').text('Введите логин').removeClass('errorAlert');
+                    data.passwordError ? ($('#passwordLabel').text('').text(data.passwordError).addClass('errorAlert')) : $('#passwordLabel').text('Введите пароль').removeClass('errorAlert');
                     data.signInError ? $('#signInError').text(data.signInError) : $('#signInError').text('');
                 } else {
-                    console.log('3');
                     window.location.href = 'userPage.php';
                 }
             }

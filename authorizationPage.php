@@ -1,4 +1,4 @@
-<? session_start()?>
+<? session_start(); ?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,14 +11,14 @@
 </head>
 <body>
 
-<div class="container">
+<div class="containerAuth">
     <h1>Авторизация</h1>
     <p>Не зарегистрированны? <a href="registrationPage.php">Создайте аккаунт!</a></p>
     <form>
-        <label>Введите логин</label><span class="errorAlert" id="loginError"></span>
-        <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required><br>
-        <label>Введите пароль</label><span class="errorAlert" id="passwordError"></span>
-        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required><br>
+        <label id="loginLabel">Введите логин</label>
+        <input class="form-control" type='text' name='login' placeholder="Логин" id='login'><br>
+        <label id="passwordLabel">Введите пароль</label>
+        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password'><br>
         <span class="errorAlert" id="signInError"></span>
         <div class="interactiveBlock">
             <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
@@ -32,5 +32,17 @@
 <script src="JavaScript/passwordVisibility.js"></script>
 <script src="JavaScript/authorizationScript.js"></script>
 
+<?
+if(isset($_COOKIE['login']) and isset($_COOKIE['password'])){
+    $cookieLogin = $_COOKIE['login'];
+    $cookiePassword = $_COOKIE['password'];
+    echo "<script>
+document.getElementById('login').value = '$cookieLogin';
+document.getElementById('password').value = '$cookiePassword';
+</script>";
+}
+?>
+
 </body>
 </html>
+

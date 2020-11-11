@@ -19,11 +19,11 @@ $(document).ready(function () {
             dataType: 'JSON',
             success: function (data) {
                 if (data.length != 0) {
-                    data.loginError ? $('#loginError').text(data.loginError) : $('#loginError').text('');
-                    data.passwordError ? $('#passwordError').text(data.passwordError) : $('#passwordError').text('');
-                    data.confirmPasswordError ? $('#confirmPasswordError').text(data.confirmPasswordError) : $('#confirmPasswordError').text('');
-                    data.emailError ? $('#emailError').text(data.emailError) : $('#emailError').text('');
-                    data.nameError ? $('#nameError').text(data.nameError) : $('#nameError').text('');
+                    data.loginError ? ($('#loginLabel').text('').text(data.loginError).addClass('errorAlert')) : $('#loginLabel').text('Введите логин').removeClass('errorAlert');
+                    data.passwordError ? ($('#passwordLabel').text('').text(data.passwordError).addClass('errorAlert')) : $('#passwordLabel').text('Введите пароль').removeClass('errorAlert');
+                    data.confirmPasswordError ? ($('#confirmPasswordLabel').text('').text(data.confirmPasswordError).addClass('errorAlert')) : $('#confirmPasswordLabel').text('Подтвердите пароль').removeClass('errorAlert');
+                    data.emailError ? ($('#emailLabel').text('').text(data.emailError).addClass('errorAlert')) : $('#emailLabel').text('Введите email').removeClass('errorAlert');
+                    data.nameError ? ($('#nameLabel').text('').text(data.nameError).addClass('errorAlert')) : $('#nameLabel').text('Введите Ваше имя').removeClass('errorAlert');
                     data.uniquenessError ? $('#uniquenessError').text(data.uniquenessError) : $('#uniquenessError').text('');
                     data.samePasswordError ? $('#samePasswordError').text(data.samePasswordError) : $('#samePasswordError').text('');
                 } else {

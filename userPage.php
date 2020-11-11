@@ -14,11 +14,14 @@ $CREATE = new CRUD();?>
 </head>
 <body>
 
-<div>
+<div class="container">
     <h1>Добро пожаловать, <? echo $_SESSION['userData'][3]; ?>!</h1>
-    <a href="delete.php"><h3>Нажмите здесь, чтобы удалить аккаунт!</h3></a>
-    <a href="logout.php"><h3>Выход!</h3></a>
+    <a href="delete.php">Нажмите здесь, чтобы удалить аккаунт</a><br>
+    <a href="logout.php">Выйти из аккаунта</a><br>
+    <a href="index.html">Вернуться на главную</a>
 </div>
+
+<script src="JavaScript/jquery-3.5.1.js"></script>
 
 </body>
 </html>

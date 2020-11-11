@@ -11,26 +11,21 @@
 </head>
 <body>
 
-<div class="container">
+<div class="containerReg">
     <h1>Регистрация</h1>
     <p>Уже есть аккаунт? <a href="authorizationPage.php">Войдите!</a></p>
     <form>
-        <label>Введите логин</label><span class="errorAlert" id="loginError"></span>
-        <input class="form-control" type='text' name='login' placeholder="Логин" id='login' required
-               pattern="[A-Za-z0-9]{6,}"><br>
-        <label>Введите пароль</label><span class="errorAlert" id="passwordError"></span>
-        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password' required
-               pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
-        ><br>
-        <label>Подтвердите пароль</label><span class="errorAlert" id="confirmPasswordError"></span>
-        <input class="form-control" type='password' name='confirmPassword' placeholder="Пароль" id='confirmPassword'
-               required pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{6,}$"
-        ><br>
-        <label>Введите адрес электронной почты</label><span class="errorAlert" id="emailError"></span>
-        <input class="form-control" type='email' name='email' placeholder="Email" id='email' required><br>
-        <label>Введите ваше имя</label><span class="errorAlert" id="nameError"></span>
-        <input class="form-control" type='text' name='name' placeholder="Имя" id='name' required
-               pattern="[A-Za-zА-Яа-яЁё]{2,}"><br>
+        <label id="loginLabel">Введите логин</label>
+        <input class="form-control" type='text' name='login' placeholder="Логин" id='login'><br>
+        <label id="passwordLabel">Введите пароль</label>
+        <input class="form-control" type='password' name='password' placeholder="Пароль" id='password'><br>
+        <label id="confirmPasswordLabel">Подтвердите пароль</label>
+        <input class="form-control" type='password' name='confirmPassword' placeholder="Пароль"
+               id='confirmPassword'><br>
+        <label id="emailLabel">Введите адрес электронной почты</label>
+        <input class="form-control" type='email' name='email' placeholder="Email" id='email'><br>
+        <label id="nameLabel">Введите ваше имя</label>
+        <input class="form-control" type='text' name='name' placeholder="Имя" id='name'><br>
         <span class="errorAlert" id="uniquenessError"></span><span class="errorAlert" id="samePasswordError"></span>
         <div class="interactiveBlock">
             <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>

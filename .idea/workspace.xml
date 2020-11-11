@@ -20,13 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="ajax/json + error alert work right">
+      <change afterPath="$PROJECT_DIR$/JavaScript/userSession.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/authorizationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/registrationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/registrationScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +117,8 @@
       <workItem from="1604963362854" duration="3080000" />
       <workItem from="1605002245975" duration="404000" />
       <workItem from="1605038054049" duration="1039000" />
-      <workItem from="1605039116270" duration="3986000" />
+      <workItem from="1605039116270" duration="4092000" />
+      <workItem from="1605117368910" duration="9016000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -169,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604962833912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ajax/json + error alert work right">
+      <created>1605043190704</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605043190704</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,10 +215,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604598081582" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604591313470">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605126263228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604591313470" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605126263228" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1604846283043">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -225,10 +239,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605043026682">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605043196751">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605043026682" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605043196751" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -241,10 +255,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604761799066" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1604845333085">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605126770048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604845333085" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605126770048" />
     <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604595214196">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,7 +1,6 @@
 <?php
 
 class CRUD
-
 {
     public function createUser($login, $password, $email, $name)
     {
@@ -41,7 +40,7 @@ class CRUD
         }
     }
 
-    public function update($oldLogin, $newLogin, $newPassword, $newEmail, $newName) //должна быть еще одна форма в кабинете юзера, которая будет отправлять измененные данные
+    public function update($oldLogin, $newLogin, $newPassword, $newEmail, $newName) //должна быть еще одна форма в кабинете юзера, которая будет обновлять данные. $oldLogin передавать как сессию.
     {
         $update = simplexml_load_file('database.xml')->xpath("//user[login ='$oldLogin']");
         foreach ($update as $item) {

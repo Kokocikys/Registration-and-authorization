@@ -6,10 +6,4 @@
         <email>test@test.com</email>
         <name>Илья</name>
     </user>
-    <user id="1">
-        <login>Customer</login>
-        <password>6aff404596996f58676743741d363030bc9e9ed7</password>
-        <email>test1@test.com</email>
-        <name>Илья</name>
-    </user>
 </users>
