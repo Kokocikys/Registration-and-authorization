@@ -2,13 +2,16 @@ $(document).ready(function () {
     $('#authorization').click(function (event) {
         let login = $('#login').val();
         let password = $('#password').val();
+        let rememberMe = $('#rememberMe').val();
         event.preventDefault();
         $.ajax({
             url: 'authorization.php',
+            cache: false,
             method: 'POST',
             data: {
                 'login': login,
-                'password': password
+                'password': password,
+                'rememberMe': rememberMe
             },
             dataType: 'JSON',
             success: function (data) {

@@ -20,11 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="Validation by PHP, Session+Cookie">
+      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/authorizationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,13 +78,15 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
-      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\PHP" />
-      <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\chern\PhpstormProjects\Authorization and registration\JavaScript" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\phpFunctions" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\phpCRUD" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\css" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\PHP" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -110,7 +120,9 @@
       <workItem from="1605002245975" duration="404000" />
       <workItem from="1605038054049" duration="1039000" />
       <workItem from="1605039116270" duration="4092000" />
-      <workItem from="1605117368910" duration="11916000" />
+      <workItem from="1605117368910" duration="11951000" />
+      <workItem from="1605198995329" duration="3171000" />
+      <workItem from="1605202823608" duration="8566000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -182,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605128157150</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Validation by PHP, Session+Cookie">
+      <created>1605131016846</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605131016846</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,18 +258,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605128159897">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605131019057">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605128159897" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605131019056" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604593594418" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605128116716">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605130993908">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605128116716" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605130993908" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1604761799066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -2,10 +2,12 @@
 
 class CRUD
 {
+    static $xmlDatabaseURL = 'database.xml';
+
     public function createUser($login, $password, $email, $name)
     {
         $xml = new DOMDocument("1.0", "UTF-8");
-        $xml->load('database.xml');
+        $xml->load(self::$xmlDatabaseURL);
 
         $usersTag = $xml->getElementsByTagName("users")->item(0);
 
@@ -24,38 +26,38 @@ class CRUD
 
         $usersTag->appendChild($userTag);
 
-        $xml->save('database.xml');
+        $xml->save(self::$xmlDatabaseURL);
     }
 
     public function read($login)
     {
-        $read = simplexml_load_file('database.xml')->xpath("//user[login ='$login']");
+        $read = simplexml_load_file(self::$xmlDatabaseURL)->xpath("//user[login ='$login']");
         foreach ($read as $item) {
             $userDataArray = [
                 $item->login->__toString(),
                 $item->password->__toString(),
                 $item->email->__toString(),
                 $item->name->__toString()];
-            return $_SESSION['userData'] = $userDataArray;
         }
+        return $_SESSION['userData'] = $userDataArray;
     }
 
     public function update($oldLogin, $newLogin, $newPassword, $newEmail, $newName) //должна быть еще одна форма в кабинете юзера, которая будет обновлять данные. $oldLogin передавать как сессию.
     {
-        $update = simplexml_load_file('database.xml')->xpath("//user[login ='$oldLogin']");
+        $update = simplexml_load_file(self::$xmlDatabaseURL)->xpath("//user[login ='$oldLogin']");
         foreach ($update as $item) {
             $item->login = $newLogin;
             $item->password = $newPassword;
             $item->email = $newEmail;
             $item->name = $newName;
-            $update->asXML('database.xml');
+            $update->asXML(self::$xmlDatabaseURL);
         }
     }
 
     public function delete($login)
     {
         $xml = new DOMDocument("1.0", "UTF-8");
-        $xml->load('database.xml');
+        $xml->load(self::$xmlDatabaseURL);
 
         $xpath = new DOMXpath($xml);
 
@@ -65,7 +67,7 @@ class CRUD
                 continue;
             }
             $dataNode->parentNode->removeChild($dataNode);
-            $xml->save('database.xml');
         }
+        $xml->save(self::$xmlDatabaseURL);
     }
 }

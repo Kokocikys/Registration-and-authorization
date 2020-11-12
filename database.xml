@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <users>
-    <user id="0">
-        <login>kokocikys</login>
-        <password>c15b14703dc4a243c288a7cdaa0aeb4b752fa34a</password>
-        <email>test@test.com</email>
-        <name>Илья</name>
-    </user>
-</users>
+    
+<user id="0"><login>kokocikys</login><password>6aff404596996f58676743741d363030bc9e9ed7</password><email>test@test.com</email><name>Илья</name></user></users>

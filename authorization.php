@@ -11,6 +11,7 @@ if (isset($_POST['login'], $_POST['password'])) {
     if (empty($_POST['password'])) {
         $errors['passwordError'] = 'Вы не ввели пароль!';
     }
+
     if (empty($errors)) {
 
         $login = $_POST['login'];
@@ -23,8 +24,10 @@ if (isset($_POST['login'], $_POST['password'])) {
             $errors['signInError'] = 'Ошибка входа! Проверьте введенные данные!';
             echo json_encode($errors);
         } else {
-            setcookie('login', $login, time() + 60 * 60 * 24 * 7);
-            setcookie('password', $_POST['password'], time() + 60 * 60 * 24 * 7);
+            if (isset($_POST['rememberMe'])) {
+                setcookie('login', $login, time() + 60 * 60 * 24 * 7);
+                setcookie('password', $_POST['password'], time() + 60 * 60 * 24 * 7);
+            }
             $CREATE->read($login);
             echo json_encode($errors);
         }

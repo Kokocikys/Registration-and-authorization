@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href='stylesheet.css'/>
+    <link rel="stylesheet" type="text/css" href='css/stylesheet.css'/>
     <title>Авторизация</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
             <input class="form-control" type='password' name='password' placeholder="Пароль" id='password'><br>
             <span class="errorAlert" id="signInError"></span>
             <div class="interactiveBlock">
-                <span><input type="checkbox" onclick="visibility(this)">&nbspПоказывать пароль</span>
+                <span><input type="checkbox" name='rememberMe' id="rememberMe">&nbspЗапомнить данные</span>
                 <input type="submit" name="insert" value="Войти" id="authorization">
             </div>
         </form>
@@ -37,7 +37,6 @@
 </div>
 
 <script src="JavaScript/jquery-3.5.1.js"></script>
-<script src="JavaScript/passwordVisibility.js"></script>
 <script src="JavaScript/authorizationScript.js"></script>
 
 <?
