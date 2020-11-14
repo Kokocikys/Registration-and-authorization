@@ -1,7 +1,11 @@
 <?php
 session_start();
-require_once 'CRUD.php';
-$CREATE = new CRUD();
+require_once 'CRUDTypeClass.php';
+$CREATE = new CRUDTypeClass();
+
+foreach($_POST as $key=>$item){
+    $_POST[$key]= htmlspecialchars($item);  //mysql_real_escape_string
+}
 
 if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST['email'], $_POST['name'])) {
     $errors = array();
@@ -47,11 +51,13 @@ if (isset($_POST['login'], $_POST['password'], $_POST['confirmPassword'], $_POST
     }
 
     if (empty($errors)) {
+
         $password = $_POST['password'];
         $confirmPassword = $_POST['confirmPassword'];
         $login = $_POST['login'];
         $email = $_POST['email'];
         $name = $_POST['name'];
+
         if ($password == $confirmPassword) {
             $coincidence = simplexml_load_file('database.xml')->xpath("//user[login ='$login' or email = '$email']");
             if (empty($coincidence)) {

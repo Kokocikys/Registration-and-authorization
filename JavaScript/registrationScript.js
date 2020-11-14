@@ -7,7 +7,8 @@ $(document).ready(function () {
         let name = $('#name').val();
         event.preventDefault();
         $.ajax({
-            url: 'registration.php',
+            url: '/phpFunctionsAndXML/registration.php',
+            cache: false,
             method: 'POST',
             data: {
                 'login': login,

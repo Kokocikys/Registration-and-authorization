@@ -14,8 +14,8 @@
 <div class="container col-4">
     <h1>Добро пожаловать, <? echo $_SESSION['userData'][3]; ?>!</h1><br>
     <div class="functionality">
-        <a href="delete.php">Нажмите здесь, чтобы удалить аккаунт</a><br>
-        <a href="logout.php">Выйти из аккаунта</a><br>
+        <a href="phpFunctionsAndXML/delete.php">Нажмите здесь, чтобы удалить аккаунт</a><br>
+        <a href="phpFunctionsAndXML/logout.php">Выйти из аккаунта</a><br>
     </div>
     <br><span id="backToMain"><a href="index.html">Вернуться на главную</a></span>
 </div>

@@ -1,7 +1,11 @@
 <?php
 session_start();
-require_once 'CRUD.php';
-$CREATE = new CRUD();
+require_once 'CRUDTypeClass.php';
+$CREATE = new CRUDTypeClass();
+
+foreach($_POST as $key=>$item){
+    $_POST[$key]= htmlspecialchars($item);  //mysql_real_escape_string
+}
 
 if (isset($_POST['login'], $_POST['password'])) {
     $errors = array();
@@ -25,8 +29,8 @@ if (isset($_POST['login'], $_POST['password'])) {
             echo json_encode($errors);
         } else {
             if (isset($_POST['rememberMe'])) {
-                setcookie('login', $login, time() + 60 * 60 * 24 * 7);
-                setcookie('password', $_POST['password'], time() + 60 * 60 * 24 * 7);
+               setcookie('login', $login, time() + 60 * 60 * 24 * 7, '/');
+               setcookie('password', $_POST['password'], time() + 60 * 60 * 24 * 7, '/');
             }
             $CREATE->read($login);
             echo json_encode($errors);

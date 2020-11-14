@@ -1,0 +1,6 @@
+RewriteEngine On
+
+<Files "database.xml">
+  Order Allow,Deny
+  Deny from all
+</Files>

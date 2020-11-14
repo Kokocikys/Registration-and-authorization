@@ -5,8 +5,7 @@ $(document).ready(function () {
         let rememberMe = $('#rememberMe').val();
         event.preventDefault();
         $.ajax({
-            url: 'authorization.php',
-            cache: false,
+            url: '/phpFunctionsAndXML/authorization.php',
             method: 'POST',
             data: {
                 'login': login,
@@ -20,7 +19,7 @@ $(document).ready(function () {
                     data.passwordError ? ($('#passwordLabel').text('').text(data.passwordError).addClass('errorAlert')) : $('#passwordLabel').text('Введите пароль').removeClass('errorAlert');
                     data.signInError ? $('#signInError').text(data.signInError) : $('#signInError').text('');
                 } else {
-                    window.location.href = 'userPage.php';
+                  window.location.href = 'userPage.php';
                 }
             }
         })

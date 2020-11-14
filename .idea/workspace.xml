@@ -19,20 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="Validation by PHP, Session+Cookie">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+    <list default="true" id="af3b70b3-6470-4f50-87bb-21177677b35a" name="Default Changelist" comment="pre final">
+      <change afterPath="$PROJECT_DIR$/phpFunctionsAndXML/database.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CRUD.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpFunctionsAndXML/CRUDTypeClass.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/authorizationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/authorizationScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/passwordVisibility.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorization.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authorizationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/authorizationPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/registrationPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/registrationPage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaScript/registrationScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/JavaScript/registrationScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/authorization.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpFunctionsAndXML/authorization.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpFunctionsAndXML/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpFunctionsAndXML/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/phpFunctionsAndXML/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userPage.php" beforeDir="false" afterPath="$PROJECT_DIR$/userPage.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +74,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -83,10 +83,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\phpFunctionsAndXML" />
+      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\database" />
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\phpFunctions" />
-      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\phpCRUD" />
       <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\css" />
-      <recent name="C:\Users\chern\OpenServer\OpenServer\domains\sign.in\PHP" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -122,7 +122,9 @@
       <workItem from="1605039116270" duration="4092000" />
       <workItem from="1605117368910" duration="11951000" />
       <workItem from="1605198995329" duration="3171000" />
-      <workItem from="1605202823608" duration="8566000" />
+      <workItem from="1605202823608" duration="8614000" />
+      <workItem from="1605270831227" duration="12701000" />
+      <workItem from="1605368012166" duration="8089000" />
     </task>
     <task id="LOCAL-00001" summary="Rebuild">
       <created>1604530444486</created>
@@ -201,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605131016846</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="pre final">
+      <created>1605220850928</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605220850928</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,13 +236,18 @@
     <MESSAGE value="ajax/json + error alert" />
     <MESSAGE value="ajax/json + error alert work right" />
     <MESSAGE value="Validation by PHP, Session+Cookie" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validation by PHP, Session+Cookie" />
+    <MESSAGE value="pre final" />
+    <option name="LAST_COMMIT_MESSAGE" value="pre final" />
   </component>
   <component name="WindowStateProjectService">
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604598081582">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="721" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604598081582" />
+    <state x="141" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605280023054">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="141" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605280023054" />
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605126263228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -258,29 +272,29 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604759554645" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605131019057">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605220853304">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605131019056" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605220853304" />
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1604593594418">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="565" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1604593594418" />
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605130993908">
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605220824410">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605130993908" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605220824410" />
     <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1604761799066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1604761799066" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1605126770048">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1605375625955">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605126770048" />
-    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1604595214196">
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605375625955" />
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605271230974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604595214196" />
+    <state x="143" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1605271230974" />
   </component>
 </project>

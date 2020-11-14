@@ -1,6 +1,6 @@
 <?php
 
-class CRUD
+class CRUDTypeClass
 {
     static $xmlDatabaseURL = 'database.xml';
 
